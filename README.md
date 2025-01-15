@@ -1,11 +1,10 @@
 # Backend Engineering - Tech Task
 
-This is a small task for the Backend Engineer role.
+This is the task for the Backend Engineer role.
 
-This backend handles Books and Authors. 
+The backend in this codebase handles Books and Authors. 
 
-For each of the following subtasks, 
-please document your reasoning/choices in the SOLUTION.md file.
+For each of the following subtasks, please document your reasoning/choices in the `SOLUTION.md` file.
 
 
 ## Part 1 
@@ -21,6 +20,7 @@ Fix as many of these as you can.
 ## Part 2
 
 Implement a Book Rental functionality, with the following business rules:
+⚠️ Make sure the solution somehow handles simultaneous rental requests for the same book.
 
 ### Spec
 Endpoint to rent a book:
@@ -33,7 +33,6 @@ Endpoint to return a book
 
 Endpoint to list all books currently rented by a user.
 
-⚠️ Make sure the solution somehow handles simultaneous rental requests for the same book.
 
 # Part 3
 Write some test, as you see fit (Integration/Unit). 
