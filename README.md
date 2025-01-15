@@ -33,6 +33,7 @@ Endpoint to return a book
 
 Endpoint to list all books currently rented by a user.
 
+⚠️ Make sure the solution somehow handles simultaneous rental requests for the same book.
 
 # Part 3
 Write some test, as you see fit (Integration/Unit). 
