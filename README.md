@@ -1,38 +1,33 @@
-# Backend Engineering - Tech Task
+# Software Engineer (Backend) - taks
 
-This is the task for the Backend Engineer role.
+This codebase implements a REST API Backend based on Spring Boot. 
 
-The backend in this codebase handles Books and Authors. 
-
-For each of the following subtasks, please document your reasoning/choices in the `SOLUTION.md` file.
+For each of the following tasks, please document your reasoning/choices in the SOLUTION.md file.
 
 
-## Part 1 
+## Task 1 - Clean up
 
-Take a look at the existing code, you'll notice some things are off, 
-- poor naming 
-- absent packaging
-- overly-inefficient data management
-- ...
+Take a look at the existing code, you'll notice some things are off:
+
+* poor naming, not much is self-explaining
+* no packaging of source files
+* some querying so inefficient to become problematic
+
 Fix as many of these as you can. 
 
 
-## Part 2
+## Task 2 - Implement new feature
 
-Implement a Book Rental functionality, with the following business rules:
-⚠️ Make sure the solution somehow handles simultaneous rental requests for the same book.
+We want to implement the concept of a Library that rents out books to users. 
 
-### Spec
-Endpoint to rent a book:
-- Ensure the book has available copies. 
-- Set a dueDate (e.g., 7 days from the rental date).
+We need to somehow track that a user can book up to a certain maximum of books simultaneously for a certain amount of time. For simplicity, let's assume 3 books simultaneously and 1 month, but would be nice to be able to plug in different numbers in the future (ex. maybe premium users will get more books for longer). 
 
-Endpoint to return a book
-- Mark the book as returned and increment availableCopies.
-- Flag if the return is late.
+When a book is not currently available, the user could reserve the book, getting added to a waitlist.
 
-Endpoint to list all books currently rented by a user.
+When the user currently holding the book returns it, the book gets assigned automatically to the first User in the waitlist.
+
+Write some test for the solution. 
 
 
-# Part 3
-Write some test, as you see fit (Integration/Unit). 
+* You can assume the currently connected user is in a request parameter, not to have to implement jwt and the like. 
+* Similarly, you can make further assumptions to avoid other boilerplate work, just document them. 
