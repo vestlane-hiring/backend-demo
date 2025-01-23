@@ -2,7 +2,7 @@
 
 This codebase implements a REST API Backend based on Spring Boot. 
 
-For each of the following tasks, please document your reasoning/choices in the SOLUTION.md file.
+For each of the following tasks, please document your reasoning/choices in the `SOLUTION.md` file.
 
 
 ## Task 1 - Clean up
