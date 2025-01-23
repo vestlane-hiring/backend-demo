@@ -1,4 +1,4 @@
-# Software Engineer (Backend) - taks
+# Software Engineer (Backend) - task
 
 This codebase implements a REST API Backend based on Spring Boot. 
 
