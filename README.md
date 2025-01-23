@@ -20,11 +20,13 @@ Fix as many of these as you can.
 
 We want to implement the concept of a Library that rents out books to users. 
 
-We need to somehow track that a user can book up to a certain maximum of books simultaneously for a certain amount of time. For simplicity, let's assume 3 books simultaneously and 1 month, but would be nice to be able to plug in different numbers in the future (ex. maybe premium users will get more books for longer). 
+We need to somehow track that a user can **book** up to a certain maximum of books simultaneously for a certain amount of time. 
 
-When a book is not currently available, the user could reserve the book, getting added to a waitlist.
+For simplicity, let's assume 3 books simultaneously and 1 month, but would be nice to be able to plug in different numbers in the future (ex. maybe premium users will get more books for longer). 
 
-When the user currently holding the book returns it, the book gets assigned automatically to the first User in the waitlist.
+When a book is not currently available, the user could **reserve** the book, getting added to a _waitlist_.
+
+When the user currently holding the book **returns** it, the book gets assigned automatically to the first User in the waitlist.
 
 Write some test for the solution. 
 
